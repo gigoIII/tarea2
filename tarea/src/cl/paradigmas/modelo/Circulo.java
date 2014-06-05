@@ -9,7 +9,6 @@ public class Circulo implements Dibujable{
 	
 	private Point posicion;
 	private int radius;
-	
 	public Circulo(Point posicion, int radius){
 		this.posicion = posicion;
 		this.radius = radius;
@@ -33,7 +32,7 @@ public class Circulo implements Dibujable{
 
 	@Override
 	public void dibujar(Graphics g) {
-		g.drawOval(posicion.x, posicion.y, radius, radius);
+		g.drawOval(posicion.x, posicion.y, radius*2, radius*2);
 	}
 	
 }
